@@ -21,7 +21,7 @@
 
 
 // ---------------------------------------------------------
-//AULA 02 -> BIND: explica a importância do atributo 'bind' que pode ser muit util em ReactJS e que nos indica qual é o this que queremos
+//AULA 02 -> BIND: explica a importância do atributo 'bind' que pode ser muito util em ReactJS e que nos indica qual é o this que queremos
 
 // function speakGeneric() {
 //     console.log(this.sound)
@@ -84,4 +84,30 @@
 
 
 // ---------------------------------------------------------
-// AULA 05 -> PROMISES;
+// AULA 05 -> PROMISES; é uma outra forma de lidar com o código assíncrono, lidando melhor com tratamento de erros
+
+// let usuarios = ["Jesus", "pedro", "thiagão", "joão"]
+
+// function addUsuario (nome) {
+    
+//     let promise = new Promise(function(resolve, reject) {
+//         setTimeout(() => {
+//             usuarios.push(nome)
+//             let error = false
+//             if(!error) {
+//                 resolve()
+//             } else {
+//                 reject({msg:"erro de qualquer coisa"})
+//             }
+//         }, 2000)
+//     })
+    
+//     return promise
+// }
+
+// function listarUsuarios() {
+//     console.log(usuarios)
+// }
+
+// addUsuario("Tiaguinho").then(listarUsuarios).catch(error.msg)
+
