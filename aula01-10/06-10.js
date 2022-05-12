@@ -74,23 +74,23 @@ console.log(alunos.filter(temMenosDe30)) */
 // ---------------------------------------------------------
 // AULA 07 -> MAP (high order function), serve pra gerar um novo array com informações do antigo array (de referência)
 
-/* function novoAluno(nome, idade) {
-    return {nome, idade}
-}
+//  function novoAluno(nome, idade) {
+//     return {nome, idade}
+// }
 
-let alunos = [
-    novoAluno("Bartolomeu", 33),
-    novoAluno("Pedro", 30),
-    novoAluno("Thiago", 32),
-    novoAluno("Joao", 29),
-    novoAluno("André", 28)
-]
+// let alunos = [
+//     novoAluno("Bartolomeu", 33),
+//     novoAluno("Pedro", 30),
+//     novoAluno("Thiago", 32),
+//     novoAluno("Joao", 29),
+//     novoAluno("André", 28)
+// ]
 
-function nomeIdade(aluno) {
-    return aluno.nome + ' tem ' + aluno.idade + ' anos.'
-}
+// function nomeIdade(aluno) {
+//     return aluno.nome + ' tem ' + aluno.idade + ' anos.'
+// }
 
-console.log(alunos.map(nomeIdade)) */
+// console.log(alunos.map(nomeIdade)) 
 
 
 
@@ -139,3 +139,49 @@ console.log(alunos.map(nomeIdade)) */
 // let pessoaContato = {...pessoa, ...contato}
 
 // console.log(pessoaContato)
+
+
+
+// ---------------------------------------------------------
+// AULA 10 -> DESESTRUTURAÇÃO DE OBJETOS: separar os dados em outras variáveis e em outros elementos 
+
+// let aluno1 = {
+//     nome: "Carlos Alberto Souza",
+//     idade: 45,
+//     telefone: 982574589758,
+//     cidade: "Rio de Janeiro"
+// }
+
+// let aluno2 = {
+//     nome: "Anderson Silva",
+//     idade: 52,
+//     telefone: 38812356,
+//     cidade: "Natal"
+// }
+
+// let aluno3 = {
+//     nome: "jefersson dos santos",
+//     idade: 14,
+//     telefone: 1138812356,
+//     cidade: "São Paulo"
+// }
+
+//*** COM OBJETOS: o que identifica os seus dados é a propriedade;
+// var { nome, idade, ...resto /* telefone e cidade */ } = aluno1
+
+// console.log(nome)
+// console.log(idade)
+// console.log(resto)
+
+//*** COM ARRAYS: o que identifica o seu dado e a sua posição, ou seja, seu index;
+
+// var alunos = [aluno1, aluno2, aluno3]
+
+// var [ carlos, ...outros ] = alunos
+
+// console.log(carlos)
+
+// console.log(outros)
+
+
+
